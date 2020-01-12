@@ -1,8 +1,11 @@
 package com.example.stacjepogodowe
 
+import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
 data class Station(
-    @SerializedName("id") val stationId: Int,
-    @SerializedName("stationName") val stationName: String
+    @SerializedName("id")
+    val stationId: Int,
+    @SerializedName("stationName")
+    val stationName: String
 )

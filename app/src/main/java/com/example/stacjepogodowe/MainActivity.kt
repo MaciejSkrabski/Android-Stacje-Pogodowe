@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         var gson = Gson()
         var station = Station(-5, "Omujborze")
         val json = gson.toJson(station)
-        this.test.setText(json)
+        Log.d("haba", json)
         val deser = gson.fromJson(json, Station::class.java)
 
         Log.d("haba", deser.stationId.toString() + " " + deser.stationName)
