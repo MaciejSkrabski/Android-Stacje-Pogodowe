@@ -1,6 +1,8 @@
 package com.example.stacjepogodowe
 
-class Sensor (sensorId: Int, paramName: String){
-    var sensorId = sensorId
-    var paramName = paramName
-}
+import com.google.gson.annotations.SerializedName
+
+data class Sensor (
+    @SerializedName("id") val sensorId: Int,
+    @SerializedName("paramName") val paramName: String
+)
